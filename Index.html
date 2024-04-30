@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous3">
+
+    <title>JohnnysBLOG</title>
+</head>
+
+<body>
+    <header class="header_body">
+        <div class="header__content container">
+            <!-- TITULO DE LA DEL BLOG PERSONAL -->
+            <div class="header__brand">
+                <h1>Johnnys<span>BLOG</span></h1>
+            </div>
+            <!-- ENLACES DE NAVEGACION Y DIRECCIONAMIENTO -->
+            <div class="navbar__content">
+                <nav class="navbar__body">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Enlaces</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Adicionales</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- BOTON PARA ACTIVAR MODO OSCURO  -->
+            <div class="modo_oscuro">
+                <button onclick="toggleDarkMode()">Cambiar Modo</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Aqui desarrolo el carrusel de imagenes  -->
+        <section class="carrucel">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="overlay"></div> <!-- Superposición para el degradado -->
+                        <img src="Img/html.avif" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="title-carrucel">Html5</h5>
+                            <p class="p-carrucel">Completado 100% Nivel: Intermendio-Experto</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="overlay"></div> <!-- Superposición para el degradado -->
+                        <img src="Img/css.avif" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="title-carrucel">Css3</h5>
+                            <p class="p-carrucel">Completado 100% Nivel: Intermendio-Experto</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="overlay"></div> <!-- Superposición para el degradado -->
+                        <img src="Img/js" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="title-carrucel">JavaScript</h5>
+                            <p class="p-carrucel">Incompleto 25% Nivel: Basico-En proceso</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+        </section>
+        <!-- mi presentacion personal y lenguje que dominos o estoy preacticandos -->
+        <section class="presentation">
+            <div class="presentation__content container">
+                <h2 class="title__presentation">&lt; <span>¡Hola, Mundo!</span> Soy Johnnys, Desarrollador Web&gt;</h2>
+
+                <p>
+                    ¡Bienvenidos a mi espacio digital! Soy Johnnys, un apasionado desarrollador web con un enfoque en la
+                    creación de experiencias en línea cautivadoras y funcionales. Con un firme compromiso con la
+                    excelencia técnica y la creatividad, me especializo en convertir ideas en realidad digital. Mi
+                    objetivo es fusionar diseño estético con funcionalidad impecable para brindar soluciones web
+                    impactantes y memorables.
+
+                    ¿Estás buscando un desarrollador web con habilidades técnicas sólidas, pasión por la innovación y
+                    una mente creativa? ¡Estás en el lugar correcto! Déjame ayudarte a llevar tu proyecto web al
+                    siguiente nivel. ¡Conéctate conmigo y hagamos magia en la web!
+
+                </p>
+            </div>
+        </section>
+
+        <section class="lenguage">
+            <div class="programming-lenguage__content container">
+                <div class="programming-lenguage__group">
+                    <a href="#" class="fa-brands fa-html5"></a>
+                    <h3>Html5</h3>
+                </div>
+
+                <div class="programming-lenguage__group">
+                    <a href="#" class="fa-brands fa-css3"></a>
+                    <h3>Css3</h3>
+                </div>
+
+                <div class="programming-lenguage__group">
+                    <a href="#" class="fa-brands fa-js"></a>
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="programming-lenguage__group">
+                    <a href="#" class="fa-brands fa-react"></a>
+                    <h3>React</h3>
+                </div>
+
+                <div class="programming-lenguage__group">
+                    <a href="#" class="fa-brands fa-bootstrap"></a>
+                    <h3>BootStrap</h3>
+                </div>
+
+                <div class="programming-lenguage__group">
+                    <a href="#" class="fa-brands fa-node"></a>
+                    <h3>Node.js</h3>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <section class="skill">
+        <div class="skill_content container">
+            <div class="hardskill">
+                <h4>Habilidades Fuertes</h4>
+                <div class="accordion" id="accordionExample1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Lenguajes de programación
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample1">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Conocimientos de software
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample1">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Mecanografía
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample1">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="softskill">
+                <h4>Habilidades Blandas</h4>
+                <div class="accordion" id="accordionExample2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Aprendizaje constante e independiente
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample1">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Mentalidad en crecimiento
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample1">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Trabajo en equipo
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample1">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="mailings">
+        <div class="mailings__content container">
+            <div class="mailings__text-content">
+                <div class="mailings__text">
+                    <h3>¡Gracias por querer comunicarte conmigo!</h3>
+                    <p>
+                        ¿Tienes alguna pregunta, sugerencia o simplemente quieres ponerte en contacto? ¡Déjame tu correo
+                        electrónico y te responderé lo antes posible!
+                    </p>
+                </div>
+            </div>
+
+            <form class="mailings__form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label><br>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer__blog">
+        <div class="footer__content">
+            <div class="footer__brand">
+                <h4>Johnnys<span>BLOG</span></h4>
+            </div>           
+        </div>
+    </footer>
+    <div class="networks">
+        <a href="#" class="fa-brands fa-facebook"></a>
+        <a href="#" class="fa-brands fa-instagram"></a>
+        <a href="#" class="fa-brands fa-discord"></a>
+        <a href="#" class="fa-brands fa-github"></a>
+    </div>
+    <script src="https://kit.fontawesome.com/247739f67a.js" crossorigin="anonymous"></script>
+    <script src="modoOscuro.js"></script>
+    <script src="parpadeo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

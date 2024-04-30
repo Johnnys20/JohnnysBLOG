@@ -1,0 +1,356 @@
+/*
+Inportacion letra google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Estilos predeterminados (modo claro) */
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+    color: #333;
+    font-style: normal;
+}
+
+/* Estilos para el modo oscuro */
+.body-dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Otros elementos que podrían necesitar ajustes en modo oscuro */
+.navbar__body a {
+    color: black; /* Color azul por defecto */
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.navbar__body a:hover{
+    color: orangered;
+}
+
+/* Estilos para los enlaces en modo oscuro */
+.body-dark-mode a {
+    color: #6c757d; /* Color gris para modo oscuro */
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+/* adactar tamaño imagenes  */
+.carousel-item img {
+    max-height: 500px;
+    /* Limita la altura máxima de las imágenes */
+    width: auto;
+    /* Mantiene la proporción de aspecto */
+    display: block;
+    /* Elimina cualquier espacio extra debajo de la imagen */
+    margin-left: auto;
+    /* Centra la imagen horizontalmente */
+    margin-right: auto;
+    object-fit: cover;
+    /* Mantiene la proporción de aspecto y cubre el contenedor */
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para el modo oscuro */
+
+
+
+/* Personalización del color orangered para los acordeones */
+.accordion-item {
+    background-color: orangered;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    color: white; /* Color del texto */
+    background-color: orangered; /* Color del botón */
+}
+
+.accordion-button:focus,
+.accordion-button:focus:not(.collapsed) {
+    background-color: orangered; /* Cambio de color al hacer clic y enfocar */
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed):hover {
+    box-shadow: none; /* Elimina el efecto de enfoque y sombra al hacer hover */
+}
+
+.accordion-button:active {
+    color: black; /* Cambio de color del texto al hacer clic */
+}
+
+.accordion-body {
+    background-color: white; /* Color del cuerpo del acordeón */
+    color: black; /* Color del texto del cuerpo */
+    border: 1px solid orangered;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Estilos opcionales para hacer que el cursor parpadee */
+.blinking-cursor {
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Aqui afecto al header */
+
+.header_body{
+    height: 100%;
+    padding: 20px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between; /* Ajuste de la alineación horizontal */
+    align-items: center;
+  
+}
+
+.header__brand{
+    padding-left: 20px;
+}
+
+.header__brand h1 span{
+    color: orangered;
+}
+
+.navbar__content{
+    display: flex;
+    text-align: center;
+}
+
+.navbar__body ul{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__body ul li {
+    display: inline-block;
+}
+
+.navbar__body ul li a{
+    text-decoration: none;
+    list-style: none;
+    padding: 0 20px;
+}
+
+.modo_oscuro button{
+    background-color: orangered;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+
+/* Aqui edito la opacidad de las imagenes del carrucel */
+
+
+.carrucel{
+    margin-bottom: 100px;
+}
+.carousel-item {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
+}
+
+.carousel-caption {
+    color: white; /* Color del texto */
+    position: absolute;
+    bottom: 20px; /* Ajusta la posición vertical del texto según sea necesario */
+    left: 20px; /* Ajusta la posición horizontal del texto según sea necesario */
+}
+
+p.p-carrucel, h5.title-carrucel{
+    color: white;
+}
+
+
+/* Estilos seccion presentacion  */
+
+.presentation{
+    margin-bottom: 100px;
+}
+
+.presentation__content{
+    text-align: center;
+}
+
+h2.title__presentation{
+    margin-bottom: 40px;
+}
+
+.presentation__content p{
+    font-size: 17px;
+}
+
+.title__presentation  span{
+    color: orangered;
+}
+
+/* Estilos iconos lenguage  */
+
+
+.lenguage{
+    margin-bottom: 100px;
+}
+
+.programming-lenguage__content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    column-gap: 20px;
+    row-gap: 100px;
+}
+
+
+.programming-lenguage__group a{
+    text-decoration: none;
+    font-size: 100px;
+    color: rgba(255, 68, 0, 0.658);
+}
+
+.programming-lenguage__group a:hover{
+    color: orangered;
+}
+
+/* Estilos seccion Skill */
+
+.skill{
+    margin-bottom: 100px;
+}
+
+.skill_content{
+    display: flex;
+    height: 400px;
+    align-items: center;
+}
+
+.hardskill{
+    text-align: center;
+    width: 50%;
+    margin: 0 20px;
+}
+.softskill{
+    text-align: center;
+    width: 50%;
+    margin: 0 20px;
+}
+/* 
+Estilos sesion envios correo */
+
+.mailings{
+    margin-bottom: 100px;
+}
+
+.mailings__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.mailings__text-content{
+    display: flex;
+    border: 4px solid orangered;
+}
+
+.mailings__text{
+    align-self: center;
+    padding: 20px;
+}
+
+
+
+.mailings__form{
+    border-bottom: 4px solid orangered;
+    padding: 20px;
+    border-radius: 0 0 8px 0;
+    text-align: center;
+}
+
+.mailings__form input ,textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 4px solid white;
+    background-color: transparent;
+}
+
+.mailings__form button{
+    background-color: orangered;
+    border-radius: 10px;
+    padding: 10px 40px;
+    margin-top: 20px;
+
+}
+
+.footer__blog{
+    height: 70px;
+}
+
+.footer__content{
+    display: flex;
+    height: 200px;
+    background-color: orangered;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+
+}
+
+.footer__brand{
+    font-size: 26px;
+}
+
+.footer__brand span{
+    color: black;
+}
+
+.networks{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 45%;
+    bottom: 45%;
+}
+
+.networks a{
+    font-size: 26px;
+    text-decoration: none;
+    margin: 5px 0 5px 5px;
+    text-align: center;
+    color: white;
+}
+
+.networks a:hover{
+    display: inline-block;
+    color: orangered;
+}
+
