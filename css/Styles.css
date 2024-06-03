@@ -129,7 +129,7 @@ Estilos enlaces modo claro */
 
 .header__content {
     display: flex;
-    justify-content: space-between; /* Ajuste de la alineación horizontal */
+    justify-content: space-between;
     align-items: center;
   
 }
@@ -341,6 +341,7 @@ Estilos sesion envios correo */
     color: black;
 }
 
+/* Estilos redes sociales */
 .networks{
     display: flex;
     flex-direction: column;
@@ -351,7 +352,7 @@ Estilos sesion envios correo */
 }
 
 .networks a{
-    font-size: 26px;
+    font-size: 20px;
     text-decoration: none;
     margin: 5px 0 5px 5px;
     text-align: center;
