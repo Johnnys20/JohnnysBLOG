@@ -297,6 +297,7 @@ Estilos sesion envios correo */
     margin-bottom: 10rem;
     background-color: #3e3f3f;
     box-shadow: .1rem .1rem .1rem black;
+    color: var(--white);
   
 }
 .mailings__form{
