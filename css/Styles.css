@@ -5,11 +5,27 @@ Inportacion letra google font */
 
 /* Estilos predeterminados (modo claro) */
 
+:root{
+    --primaryColor:orangered;
+    --black:black;
+    --white:white;
+}
+
+html{
+    font-size: 62.5%;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     background-color: #fff;
     color: #333;
     font-style: normal;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
 }
 
 /* 
@@ -28,26 +44,26 @@ Estilos enlaces modo claro */
 
 /* Otros elementos que podrían necesitar ajustes en modo oscuro */
 .navbar__body a {
-    color: black; /* Color azul por defecto */
+    color: var(--black); /* Color azul por defecto */
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .navbar__body a:hover{
-    color: orangered;
+    color: var(--primaryColor);
 }
 
 /* Estilos para los enlaces en modo oscuro */
 .body-dark-mode a {
     color: #6c757d; /* Color gris para modo oscuro */
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 
 /* adactar tamaño imagenes  */
 .carousel-item img {
-    max-height: 500px;
+    max-height: 50rem;
     /* Limita la altura máxima de las imágenes */
     width: auto;
     /* Mantiene la proporción de aspecto */
@@ -68,20 +84,20 @@ Estilos enlaces modo claro */
 
 /* Personalización del color orangered para los acordeones */
 .accordion-item {
-    background-color: orangered;
-    border: 1px solid orangered;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    background-color: var(--primaryColor);
+    border: .1rem solid var(--primaryColor);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
 }
 
 .accordion-button {
-    color: white; /* Color del texto */
-    background-color: orangered; /* Color del botón */
+    color: var(--white); /* Color del texto */
+    background-color: var(--primaryColor); /* Color del botón */
 }
 
 .accordion-button:focus,
 .accordion-button:focus:not(.collapsed) {
-    background-color: orangered; /* Cambio de color al hacer clic y enfocar */
+    background-color: var(--primaryColor); /* Cambio de color al hacer clic y enfocar */
 }
 
 .accordion-button:focus,
@@ -90,15 +106,15 @@ Estilos enlaces modo claro */
 }
 
 .accordion-button:active {
-    color: black; /* Cambio de color del texto al hacer clic */
+    color: var(--black); /* Cambio de color del texto al hacer clic */
 }
 
 .accordion-body {
-    background-color: white; /* Color del cuerpo del acordeón */
-    color: black; /* Color del texto del cuerpo */
-    border: 1px solid orangered;
+    background-color: var(--white); /* Color del cuerpo del acordeón */
+    color: var(--black); /* Color del texto del cuerpo */
+    border: .1rem solid var(--primaryColor);
     border-top: none;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 .5rem .5rem;
 }
 
 /* Estilos opcionales para hacer que el cursor parpadee */
@@ -124,7 +140,7 @@ Estilos enlaces modo claro */
 
 .header_body{
     height: 100%;
-    padding: 20px;
+    padding: 2rem;
 }
 
 .header__content {
@@ -135,11 +151,11 @@ Estilos enlaces modo claro */
 }
 
 .header__brand{
-    padding-left: 20px;
+    padding-left: 2rem;
 }
 
 .header__brand h1 span{
-    color: orangered;
+    color: var(--primaryColor);
 }
 
 .navbar__content{
@@ -159,7 +175,7 @@ Estilos enlaces modo claro */
 .navbar__body ul li a{
     text-decoration: none;
     list-style: none;
-    padding: 0 20px;
+    padding: 0 2rem;
 }
 
 a#icon-luna{
@@ -167,7 +183,7 @@ a#icon-luna{
     list-style: none;
     text-decoration: none;
     color: orange;
-    font-size: 20px;
+    font-size: 2rem;
     text-transform: capitalize;
 }
 
@@ -175,7 +191,7 @@ a#icon-luna{
 
 
 .carrucel{
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
 }
 .carousel-item {
     position: relative;
@@ -191,21 +207,22 @@ a#icon-luna{
 }
 
 .carousel-caption {
-    color: white; /* Color del texto */
+    color: var(--white); /* Color del texto */
     position: absolute;
-    bottom: 20px; /* Ajusta la posición vertical del texto según sea necesario */
-    left: 20px; /* Ajusta la posición horizontal del texto según sea necesario */
+    bottom: 2rem; /* Ajusta la posición vertical del texto según sea necesario */
+    left: 2rem; /* Ajusta la posición horizontal del texto según sea necesario */
 }
 
 p.p-carrucel, h5.title-carrucel{
-    color: white;
+    color: var(--white);
+    font-size: 1.4rem;
 }
 
 
 /* Estilos seccion presentacion  */
 
 .presentation{
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
 }
 
 .presentation__content{
@@ -213,132 +230,143 @@ p.p-carrucel, h5.title-carrucel{
 }
 
 h2.title__presentation{
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 .presentation__content p{
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 
 .title__presentation  span{
-    color: orangered;
+    color: var(--primaryColor);
 }
 
 /* Estilos iconos lenguage  */
 
 
 .lenguage{
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
 }
 
 .programming-lenguage__content{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     text-align: center;
-    column-gap: 20px;
-    row-gap: 100px;
+    column-gap: 2rem;
+    row-gap: 10rem;
 }
 
 
 .programming-lenguage__group a{
     text-decoration: none;
-    font-size: 100px;
+    font-size: 10rem;
     color: rgba(255, 68, 0, 0.658);
 }
 
 .programming-lenguage__group a:hover{
-    color: orangered;
+    color: var(--primaryColor);
 }
 
 /* Estilos seccion Skill */
 
 .skill{
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
 }
 
 .skill_content{
     display: flex;
-    height: 400px;
+    height: 40rem;
     align-items: center;
 }
 
 .hardskill{
     text-align: center;
     width: 50%;
-    margin: 0 20px;
+    margin: 0 2rem;
+
 }
 .softskill{
     text-align: center;
     width: 50%;
-    margin: 0 20px;
+    margin: 0 2rem;
 }
 /* 
 Estilos sesion envios correo */
 
 .mailings{
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
+    background-color: #3e3f3f;
+    box-shadow: .1rem .1rem .1rem black;
+  
+}
+.mailings__form{
+    width: min(70rem, 100%);
+
 }
 
 .mailings__content{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    padding: 4rem;
+
 }
 
 .mailings__text-content{
     display: flex;
-    border: 4px solid orangered;
+    border: .4rem solid var(--primaryColor);
 }
 
 .mailings__text{
     align-self: center;
-    padding: 20px;
+    padding: 2rem;
 }
 
 
 
 .mailings__form{
-    border-bottom: 4px solid orangered;
-    padding: 20px;
-    border-radius: 0 0 8px 0;
+    border-bottom: .4rem solid var(--primaryColor);
+    padding: 2rem;
+    border-radius: 0 0 .8rem 0;
     text-align: center;
 }
 
 .mailings__form input ,textarea{
     width: 100%;
-    margin-bottom: 20px;
-    border-bottom: 4px solid white;
+    margin-bottom: 2rem;
+    border-bottom: .4rem solid var(--white);
     background-color: transparent;
+    color: white;
 }
 
 .mailings__form button{
-    background-color: orangered;
-    border-radius: 10px;
-    padding: 10px 40px;
-    margin-top: 20px;
+    background-color: var(--primaryColor);
+    border-radius: 1rem;
+    padding: 1rem 4rem;
+    margin-top: 2rem;
 
 }
 
 .footer__blog{
-    height: 70px;
+    height: 7rem;
 }
 
 .footer__content{
     display: flex;
-    height: 200px;
-    background-color: orangered;
+    height: 20rem;
+    background-color: var(--primaryColor);
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    color: white;
+    padding: 0 2rem;
+    color: var(--white);
 
 }
 
 .footer__brand{
-    font-size: 26px;
+    font-size: 2.6rem;
 }
 
 .footer__brand span{
-    color: black;
+    color: var(--black);
 }
 
 /* Estilos redes sociales */
@@ -352,23 +380,39 @@ Estilos sesion envios correo */
 }
 
 .networks a{
-    font-size: 20px;
+    font-size: 2rem;
     text-decoration: none;
-    margin: 5px 0 5px 5px;
+    margin: .5rem 0 .5rem .5rem;
     text-align: center;
 }
 
 .networks a:hover{
     display: inline-block;
-    color: orangered;
+    color: var(--primaryColor);
 }
 
 
 /* Estilos renponsivos  */
 
-/* @media (min-width:769px) and (max-width:1024px){
-    .skill_content{
+@media (max-width:768px) {
+    .header__content{
+        display: flex;
         flex-direction: column;
     }
-} */
 
+    .navbar__body ul li{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .programming-lenguage__content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .mailings__content{
+        display: flex;
+        flex-direction: column;
+    }
+}

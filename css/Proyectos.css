@@ -5,15 +5,34 @@ Inportacion letra google font */
 
 /* Estilos predeterminados (modo claro) */
 
-body{
+:root {
+    --primaryColor: orangered;
+    --black: black;
+    --white: white;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
     font-family: "Roboto", sans-serif;
     background-color: #fff;
-    color: white;
+    color: var(--white);
     font-style: normal;
+    font-size: 16px;
+    box-sizing: border-box;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 /* 
 Estilos enlaces modo claro */
-.networks a{
+.networks a {
     color: #333;
 }
 
@@ -27,50 +46,52 @@ Estilos enlaces modo claro */
 
 /* Otros elementos que podrían necesitar ajustes en modo oscuro */
 .navbar__body a {
-    color: black; /* Color azul por defecto */
+    color: black;
+    /* Color azul por defecto */
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
-.navbar__body a:hover{
-    color: orangered;
+.navbar__body a:hover {
+    color: var(--primaryColor);
 }
 
 /* Estilos para los enlaces en modo oscuro */
 .body-dark-mode a {
-    color: #6c757d; /* Color gris para modo oscuro */
+    color: #6c757d;
+    /* Color gris para modo oscuro */
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 /* Estilos header */
 
-.header_body{
-    margin-bottom: 100px;
-    padding: 20px;
+.header_body {
+    margin-bottom: 10rem;
+    padding: 2rem;
 }
 
 .header__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+
 }
 
-.header__brand{
-    padding-left: 20px;
+.header__brand {
+    padding-left: 2rem;
 }
 
-.header__brand h1 span{
-    color: orangered;
+.header__brand h1 span {
+    color: var(--primaryColor);
 }
 
-.navbar__content{
+.navbar__content {
     display: flex;
     text-align: center;
 }
 
-.navbar__body ul{
+.navbar__body ul {
     margin: 0;
     padding: 0;
 }
@@ -79,112 +100,117 @@ Estilos enlaces modo claro */
     display: inline-block;
 }
 
-.navbar__body ul li a{
+.navbar__body ul li a {
     text-decoration: none;
     list-style: none;
-    padding: 0 20px;
+    padding: 0 2rem;
 }
 
-a#icon-luna{
+a#icon-luna {
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
     color: orange;
-    font-size: 20px;
+    font-size: 2rem;
     text-transform: capitalize;
 }
+
 /* 
 Estilos proyectos */
 
-.main{
-    margin-bottom: 100px;
+.main {
+    margin-bottom: 10rem;
 }
 
-.main h2.title__proyectos{
+.main h2.title__proyectos {
     text-align: center;
-    margin-bottom: 50px;
-    
+    margin-bottom: 5rem;
+
 }
 
-.main h2.title__proyectos{
-    color: orangered;
+.main h2.title__proyectos {
+    color: var(--primaryColor);
 }
 
-.main h2.title__proyectos span{
+.main h2.title__proyectos span {
     color: #6c757d;
 }
 
-.main .proyectos__group p{
-    font-size: 16px;
+.main .proyectos__group p {
+    font-size: 1.6rem;
 }
 
 
-.proyectos__content{
+.proyectos__content {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 20px;
-    row-gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    row-gap: 4rem;
 }
 
 
-.main h3{
-    font-size: 20px;
+
+
+.main h3 {
+    font-size: 2rem;
     text-transform: capitalize;
     font-weight: 400;
     text-align: center;
-    padding: 0 0 10px 0;
+    padding: 0 0 1rem 0;
 
 }
 
-.main img{
-    padding: 10px 0; 
-    width: 270px;
-    height: 150px;
-    box-shadow: 2px 2px 7px orangered;
-    margin-bottom: 10px;
+.main img {
+    padding: 1rem 0;
+    width: 27rem;
+    height: 15rem;
+    box-shadow: .2rem .2rem .7rem var(--primaryColor);
+    margin-bottom: 1rem;
 }
 
 
-.main .proyectos__group p{
-    font-size: 15px;
+.main .proyectos__group p {
+    font-size: 1.5rem;
     text-align: left;
 }
 
 
 
-.main .calificacion__group a{
-    font-size: 14px;
+.main .calificacion__group a {
+    font-size: 1.4rem;
     text-decoration: none;
     color: yellow;
 }
+
 /* Estilos footer */
 
-.footer__blog{
-    height: 70px;
+.footer__blog {
+    height: 7rem;
 }
 
-.footer__content{
+.footer__content {
     display: flex;
-    height: 200px;
-    background-color: orangered;
+    height: 20rem;
+    background-color: var(--primaryColor);
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    color: white;
+    padding: 0 2rem;
+    color: var(--white);
 
 }
 
-.footer__brand{
-    font-size: 26px;
+.footer__brand {
+    font-size: 2.6rem;
 }
 
-.footer__brand span{
-    color: black;
+.footer__brand span {
+    color: var(--black);
 }
+
 /* 
 Estilos redes sociales */
 
-.networks{
+.networks {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -193,14 +219,85 @@ Estilos redes sociales */
     bottom: 45%;
 }
 
-.networks a{
-    font-size: 20px;
+.networks a {
+    font-size: 2rem;
     text-decoration: none;
-    margin: 5px 0 5px 5px;
+    margin: .5rem 0 .5rem .5rem;
     text-align: center;
 }
 
-.networks a:hover{
+.networks a:hover {
     display: inline-block;
-    color: orangered;
+    color: var(--primaryColor);
+}
+
+@media (max-width:480px) {
+
+    .header_body {
+        margin-bottom: 1.8rem;
+    }
+
+    .header__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar__body ul li {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+
+    .proyectos__content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .proyectos__group {
+        text-align: center;
+    }
+
+    .main .proyectos__group p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .proyectos__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .header_body {
+        margin-bottom: 1.8rem;
+    }
+
+    .header__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar__body ul li {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .proyectos__group {
+        text-align: center;
+    }
+
+    .main .proyectos__group p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+
 }
